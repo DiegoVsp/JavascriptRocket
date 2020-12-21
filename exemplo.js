@@ -20,6 +20,6 @@
     console.log(nome, age, isHuman)
 
     console.log(`O ${nome} tem ${age} anos e é ${isHuman} Human`)
-    console.log(`O ${nome} tem ${age} anos e é ${isHuman} Human`)
+    console.log(`O ${nome} tem ${age} anos`)
 
 
