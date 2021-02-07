@@ -5,12 +5,12 @@ let weight = 49.2
 console.log(typeof weight)
 
 // 3. Declare uma variável e atribua valores para cada um dos dados:
-let name = "Diego"
+let nome = "Diego"
 let age = 29
 let stars = 4.5
 let isSubscribed = true
 
-console.log(`Nome ${name}, age ${age}, stars ${stars}, isSubscribed ${isSubscribed}`)
+console.log(`Nome ${nome}, age ${age}, stars ${stars}, isSubscribed ${isSubscribed}`)
 
 /**
  * 4. A variável student é de que tipo de dados? 
@@ -23,7 +23,7 @@ let student = {}
 console.log(typeof student)
 
 student = {
-  nome: 'Diego',
+  nome1: 'Diego',
   idade: 29,
   peso: 83.5,
   stars: 4.5,
@@ -31,8 +31,8 @@ student = {
 }
 console.log(student)
 
-let { nome, idade, peso } = student
-console.log(`${nome} de idade ${idade} pesa ${peso} kilos.`)
+let { nome1, idade, peso } = student
+console.log(`${nome1} de idade ${idade} pesa ${peso} kilos.`)
 
 /**
  * 5. Declare uma variável do tipo Array, de nome students e atribua a ela
@@ -55,5 +55,5 @@ const mario = {
 estudantes[1] = mario
 console.log(estudantes)
 
-console.log(a)
 var a = 1
+console.log(a)
