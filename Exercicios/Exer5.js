@@ -31,7 +31,7 @@ console.log(convertTo(50, 'C'))
 function transformDegree(degree) {
   const celsiusExists = degree.toUpperCase().includes('C')
   const fahrenheitExists = degree.toUpperCase().includes('F')
-  
+
   //Fluxo de erro
   if (!celsiusExists && !fahrenheitExists) {
     throw new Error('Grau não identificado')
