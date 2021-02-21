@@ -57,3 +57,50 @@ console.log(elemento8.style.backgroundColor)
 elemento8.classList.add('active','green')
 elemento8.classList.remove('active')
 elemento8.classList.toggle('active')
+
+// Navegando pelos elementos
+
+const body = document.querySelector('body')
+// console.log(body.parentElement)
+// console.log(body.parentNode)
+
+// chieldNodes | children
+
+// console.log(body.childNodes)
+// console.log(body.children)
+// console.log(body.firstChild)
+console.log(body.firstElementChild)
+// console.log(body.lastChild)
+console.log(body.lastElementChild)
+
+// const h = document.querySelector('body')
+const h = document.querySelector('body script')
+// _______nextSibling | nextElementSibling
+
+// console.log(h.nextElementSibling)
+// console.log(h.nextSibling)
+
+
+// previousSibling | prviousElementSibling
+
+console.log(h.previousSibling)
+console.log(h.previousElementSibling)
+
+
+// Criando e adicionando elementos
+
+// create element
+const div = document.createElement('div')
+div.innerText="Olá devs"
+
+// append element
+const body2 = document.querySelector('body')
+// body2.append(div)
+body2.prepend(div)
+
+// insertBefore
+// before = antes
+const script = document.querySelector('body script')
+const header3 = document.querySelector('body header')
+// body.insertBefore(div, script)
+body.insertBefore(div, header3.nextElementSibling) //inserindo logo depois do header
