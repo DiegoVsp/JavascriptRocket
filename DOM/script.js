@@ -14,7 +14,7 @@ elemento5.forEach(el => console.log(el))
   getElementByTagName (HTML Collection)
   querySelector (Element)
   querySelectorAll (NodeList)
-*/ 
+*/
 
 // textContent
 const elemento6 = document.querySelector('.blog-title')
@@ -24,7 +24,7 @@ const elemento6 = document.querySelector('.blog-title')
 // console.log(elemento6.textContent)
 
 // innerHTML
-elemento6.innerHTML="Olá Devs! <small>!!!</small>"
+elemento6.innerHTML = "Olá Devs! <small>!!!</small>"
 
 // Manipulando conteúdo
 // value
@@ -32,7 +32,7 @@ elemento6.innerHTML="Olá Devs! <small>!!!</small>"
 const element7 = document.querySelector('input')
 
 // console.log(element7.value)
-element7.value='Outro valor'
+element7.value = 'Outro valor'
 
 // manipulando atributos
 const header = document.querySelector('header')
@@ -54,7 +54,7 @@ console.log(elemento8.style.backgroundColor)
 
 
 // Alterar estilos usando classList
-elemento8.classList.add('active','green')
+elemento8.classList.add('active', 'green')
 elemento8.classList.remove('active')
 elemento8.classList.toggle('active')
 
@@ -91,7 +91,7 @@ console.log(h.previousElementSibling)
 
 // create element
 const div = document.createElement('div')
-div.innerText="Olá devs"
+div.innerText = "Olá devs"
 
 // append element
 const body2 = document.querySelector('body')
@@ -104,3 +104,31 @@ const script = document.querySelector('body script')
 const header3 = document.querySelector('body header')
 // body.insertBefore(div, script)
 body.insertBefore(div, header3.nextElementSibling) //inserindo logo depois do header
+
+// Eventos
+function print() {
+  console.log("Olá print")
+}
+
+const input = document.querySelector('input')
+
+input.onkeydown = () => {
+  console.log('Rodei')
+}
+
+const h1 = document.querySelector('h1')
+
+// h1.addEventListener('mouseover', print)
+// h1.onclick = print
+
+//  ________MANEIRA RECOMENDADA_________
+h1.addEventListener('click',print)
+h1.addEventListener('click',()=>{
+  console.log('Olá mundo')
+})
+
+// argumento event
+
+input.onkeydown = (event) => {
+  console.log(event.currentTarget.value)
+}
